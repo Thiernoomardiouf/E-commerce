@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="script.js">
+  </head>
+  <body>
+    <!-- nav part -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo-nature.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active px-4" aria-current="page" href="#">Accueil</a>
+              <a class="nav-link px-3" href="#shoes">Chaussures</a>
+              <a class="nav-link px-3" href="#backpack">Sac à dos</a>
+              <a class="nav-link px-3" href="#montre">Montre</a>
+              <a class="nav-link px-3" href="#subscribe" tabindex="-1" aria-disabled="true">S'abonner</a>
+              <a class="nav-link px-3" href="#faq">FAQ</a>
+              <a class="nav-link px-3" href=""><span class="fa fa-shopping-cart"></span></a>
+            </div>
+          </div>
+        </div>
+      </nav> 
+
+      <!-- carousel part -->
+      <div id="carouselExampleControls" class="carousel slide panda-slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner panda-inner">
+          <div class="carousel-item active">
+            <div class="row d-flex align-items-center p-5">
+              <div class="col-md-7">
+                <h1>Mega TV LCD pour le sport</h1>
+                <p>
+                  C'est le meilleur téléviseur au monde pour les personnes qui veulent juste
+                   perdre du temps devant la télé.
+                </p>
+                <h3>$1200</h3>
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant</button>
+              </div>
+              <div class="col-md-5">
+                <img src="images/banner-images/tv-removebg-preview.png" class="d-block w-100" alt="..."/>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex align-items-center p-5">
+              <div class="col-md-7">
+                <h1>X-Box pour votre salon</h1>
+                <p>
+                  C'est la meilleure x-box au monde pour les personnes qui veulent juste
+                   perdre du temps devant de faux sports.
+                </p>
+                <h3>$420</h3>
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant</button>
+              </div>
+              <div class="col-md-5">
+                <img src="images/banner-images/headphone.png" class="d-block w-100" alt="..."/>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex align-items-center p-5">
+              <div class="col-md-7">
+                <h1>Cool mec casque</h1>
+                <p>
+                  C'est le meilleur casque au monde pour les personnes qui
+                   veulent perdre du temps devant un monde funky.
+                </p>
+                <h3>$600</h3>
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant</button>
+              </div>
+              <div class="col-md-5">
+                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="..."/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédente</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Prochaine</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- main content part -->
+    <main class="container">
+      <!-- montre, sac et chaussure -->
+      <section class="container overflow-hidden mt-5 categories">
+        <div class="row g-5">
+          <div class="col">
+            <div class="p-3 cat-rounded bg-yellow d-flex align-items-center justify-content-around">
+              <h1 class="text-white">Regarder</h1>
+              <img src="images/categories/watch.png" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 cat-rounded bg-red d-flex align-items-center justify-content-around">
+              <h1 class="text-white">Sac</h1>
+              <img src="images/categories/bag.png" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 cat-rounded bg-blue d-flex align-items-center justify-content-around">
+              <h1 class="text-white">Des chaussures</h1>
+              <img src="images/categories/shoes.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- chaussures card part -->
+      <section id="shoes" class="mt-5">
+        <h2>Des chaussures</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1"> 
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/shoes/shoe-1.png" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Approvisionnement 350</h5>
+                <p class="card-text">
+                  Il s'agit d'une carte plus large avec un texte de support ci-dessous comme un naturel
+                  conduire à du contenu supplémentaire. Ce contenu est un peu
+                  plus long.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/shoes/shoe-2.png" class="-img-cardtop" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Nike 360</h5>
+                <p class="card-text">
+                  Cette carte a un texte d'accompagnement ci-dessous comme introduction naturelle à
+                   contenu additionnel.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/shoes/shoe-3.png" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Airmax rouge</h5>
+                <p class="card-text">
+                  Il s'agit d'une carte plus large avec un texte de support ci-dessous comme un naturel
+                   conduire à du contenu supplémentaire. Cette carte a encore plus
+                   contenu que le premier pour montrer cette action de hauteur égale.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- backpack part -->
+      <section id="backpack" class="mt-5">
+        <h2>Sac à dos</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/bags/bag-1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Sac de voyage rouge</h5>
+                <h5>7 000 CFA</h5>
+                <p class="card-text">
+                  Il s'agit d'une carte plus large avec un texte de support ci-dessous comme un naturel
+                   conduire à du contenu supplémentaire. Ce contenu est un peu
+                   plus long.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/bags/bag-2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Sac de voyage bleu</h5>
+                <h5>8 000 CFA</h5>
+                <p class="card-text">
+                  Cette carte a un texte d'accompagnement ci-dessous comme introduction naturelle à
+                  contenu additionnel.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/bags/bag-3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Sac de voyage noir</h5>
+                <h5>6 000 CFA</h5>
+                <p class="card-text">
+                  Il s'agit d'une carte plus large avec un texte de support ci-dessous comme un naturel
+                   conduire à du contenu supplémentaire. Cette carte a encore plus
+                   contenu que le premier pour montrer cette action de hauteur égale.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- montre part -->
+      <section id="montre" class="mt-5">
+        <h2>Montre</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/montre/montre5.jpg" class="card-img-top" alt="..." style="height: 350px"/>
+              <div class="card-body">
+                <h5 class="card-title">Montre à main noire</h5>
+                <h5>17 000 CFA</h5>
+                <p class="card-text">
+                  Il s'agit d'une carte plus large avec un texte de support ci-dessous comme un naturel
+                   conduire à du contenu supplémentaire. Ce contenu est un peu
+                   plus long.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/montre/montre4.jpg" class="card-img-top" alt="..." style="height: 350px"/>
+              <div class="card-body">
+                <h5 class="card-title">Montre à main rouge</h5>
+                <h5>15 000 CFA</h5>
+                <p class="card-text">
+                  Cette carte a un texte d'accompagnement ci-dessous comme introduction naturelle à
+                  contenu additionnel.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card panda-card h-100 p-2 shadow">
+              <img src="images/montre/montre3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Montre à main gris</h5>
+                <h5>16 000 CFA</h5>
+                <p class="card-text">
+                  Il s'agit d'une carte plus large avec un texte de support ci-dessous comme un naturel
+                   conduire à du contenu supplémentaire.
+                </p>
+              </div>
+              <div class="card-footer panda-card-footer mb-2">
+                <button class="btn btn-bg-color btn-rounded">Acheter maintenant >> <span class="fa fa-shopping-cart"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- s'abonner part -->
+      <section id="subscribe" style="height: 300px" class="bg-light-blue rounded-corner mt-5 d-flex justify-content-center align-items-center">
+        <div>
+          <h1 style="text-align: center">RESTONS EN CONTACT</h1>
+          <h5 style="text-align: center">
+            Recevez des mises à jour sur les ventes, les promotions et plus encore
+          </h5>
+          <div class="d-flex align-items-center justify-content-evenly">
+            <input style="width: 250px" type="email" class="form-control btn-rounded ms-3" id="exampleInputEmail1" placeholder="Entrez votre adresse email"/>
+            <button class="btn btn-bg-color btn-rounded me-3">NOUS FAIRE PARVENIR</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ's -->
+      <section class="container mt-5" id="faq">
+        <h1 class="mb-4">Questions fréquemment posées</h1>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <h4>Quel est le statut de ma commande ?</h4>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                    <p>Une fois que vous avez passé votre commande, nous vous enverrons un e-mail de confirmation pour suivre l'état de votre commande. Une fois votre commande expédiée, nous vous enverrons un autre e-mail pour vous confirmer le
+                      date de livraison ainsi que le lien pour suivre votre commande (lorsque le mode de livraison le permet). 
+                      En outre, vous pouvez suivre l'état de votre commande à partir de votre section « historique des commandes »
+                      sur la page de votre compte sur le site Web.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <h4>Puis-je modifier ma commande ?</h4>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>Nous ne pouvons modifier que les commandes qui n'ont pas encore été traitées pour l'expédition. Une fois que votre commande est sous le statut "préparé pour l'expédition", "expédition" ou "livrée", nous ne pouvons accepter aucune modification de votre commande. Pour apporter des modifications à votre commande, veuillez contacter l'assistance via le service d'assistance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <h4>Quels modes de paiement acceptez-vous?</h4>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p>Vous pouvez acheter sur notre site Web en utilisant une carte de débit ou de crédit. Nous proposons également une assistance pour Paypal, Amazon Pay, Apple Pay et Google Pay. Vous pouvez choisir ces méthodes de paiement à la caisse.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        <h4>Dans quelle devise vais-je être facturé ?</h4>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <p>Actuellement, nous ne prenons en charge que les devises suivantes pour facturer nos clients dans leurs devises locales : CFA, USD, CAD et EUR. Si votre carte de crédit ou de débit utilise une autre devise, vous serez facturé en CFA, USD, CAD ou EUR, selon le site Web sur lequel vous vous trouvez. Votre banque appliquera le taux de conversion correspondant à la devise que vous choisissez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- À propos de nous -->
+    <section class="container my-5 bg-white px-4 py-5 shadow rounded-1" id="about">
+        <h1 class="mb-4">À propos de nous</h1>
+        <p style="text-align: justify;">
+          Bienvenue sur Nature Shop, votre source numéro un pour toutes choses. Nous nous engageons à vous fournir le meilleur des produits, en mettant l'accent sur certains magasins.
+            
+            
+          Fondé en 2021 par Developper Community, Nature Shop a parcouru un long chemin depuis ses débuts à Dakar. Lorsque Developper Community a commencé, leur passion pour le commerce les a poussés à créer leur propre entreprise.
+         
+         
+          Nous espérons que vous apprécierez nos produits autant que nous aimons vous les offrir. Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter.
+            <br>
+            <br>
+            Sincèrement,
+            <br>
+            Héros de la programmation
+            
+            </p>
+    </section>
+    </main>
+
+    <!-- footer part -->
+    <div class="container">
+    <footer class="text-center mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Nature Shop</h4>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-footer">
+              <a href="#">Accueil</a>
+              <a href="#shoes">Des chaussures</a>
+              <a href="#backpack">Sac à dos</a>
+              <a href="#montre">Montre</a>
+              <a href="#subscribe">S'abonner</a>
+              <a href="#faq">FAQ</a>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-social">
+              <img src="images/facebook-logo.svg" alt="Facebook">
+              <img src="images/twitter.svg" alt="Twitter">
+              <img src="images/google-plus.svg" alt="Google">
+              <img src="images/instagram-social-network-logo-of-photo-camera.svg" alt="Instagram">
+              <img src="images/linkedin.svg" alt="Linkedin">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <small>@2021. Commerce de Nature Shop. Tous les droits sont réservés.</small>
+    </footer>
+  </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

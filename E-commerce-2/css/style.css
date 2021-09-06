@@ -1,0 +1,107 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+.navbar-brand img{
+  width: 150px;
+  height: 80px;
+}
+.navbar-nav a{
+  font-size: 25px;
+  font-weight: bold;
+}
+.bg-nav {
+  background-color: #9eb6ef;
+  border-radius: 0.5em;
+}
+.btn-rounded {
+  border-radius: 0.8em;
+}
+.btn-bg-color {
+  background-color: #edcd7e;
+}
+.panda-card {
+  border: 0;
+  border-radius: 0.8em;
+}
+.panda-card-footer {
+  background-color: white;
+  border: 0;
+}
+.categories img {
+  width: 100px;
+}
+.bg-yellow {
+  background-color: #edcd7e;
+}
+.bg-red {
+  background-color: #f76c6c;
+}
+.bg-blue {
+  background-color: #24305e;
+}
+.bg-light-blue {
+  background-color: #9eb6ef;
+}
+.rounded-corner {
+  border-radius: 0.8em;
+}
+.cat-rounded {
+  border-radius: 0.8em;
+}
+.panda-slide .carousel-item {
+  background-color: #9eb6ef;
+}
+.panda-inner {
+  border-radius: 0.8em;
+}
+
+
+footer{
+  display: block;
+  border-radius: 0.3em;
+}
+footer {
+  background-color: #dfd7d7;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer h4 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+footer .list-footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+footer a {
+  color: #7d7d7d;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .list-social {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+footer .list-social img {
+  margin-left: 20px;
+}
+
+footer img {
+  width: 20px;
+  height: auto;
+}
